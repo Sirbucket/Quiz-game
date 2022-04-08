@@ -1,0 +1,35 @@
+/* Header hover */
+.header:hover {
+	background-color: #c6093b;
+  color: white;
+	transform: scale(1.05,1.05);
+}
+
+/* Button highlight */
+.highlight {
+  color: #ff4242; /* IACS red */
+  text-shadow: 3px 3px white;
+  font-weight: bold;
+  font-family: Futura;
+}
+
+/* Question hovering */
+.question:hover {
+	background-color: #c6093b;
+  color: white;
+	transform: scale(1.02,1.02);
+}
+
+/* Control hovering */
+.controls:hover {
+	background-color: #c6093b;
+  color: white;
+	transform: scale(1.05,1.05);
+}
+
+/* Change color when the mouse hover */
+button:hover {
+  background-color: #a3002c;
+  color: white;
+	transform: scale(1.1,1.1);
+}

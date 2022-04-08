@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WoW Classic Warrior Quiz</title>
+		<link rel = "preload" as = "style" href = "./style.css">
+		<link rel = "preload" as = "style" href = "./init.css">
+		<link rel = "preload" as = "script" href = "./app/questions.ts" crossOrigin = "NA">
+		<link rel = "preload" as = "script" href = "./app/utilities.ts" crossOrigin = "NA">
+		<link rel = "stylesheet" href = "./style.css">
+		<link rel = "stylesheet" href = "./init.css">
+		<script type = "module" src = "./app/questions.ts" defer> </script>
+		<script type = "module" src = "./app/utilities.ts" defer> </script>
+  </head>
+  <body>
+    <div id="app">
+			<main class="app">
+  <div class="header">
+    The <span class="highlight">Classic Warrior</span> Quiz
+  </div>
+  <div class="quiz">
+    <div class="question-container">
+      <div class="question">
+        Question Location
+      </div>
+      <div class="answers">
+        <button>F1</button>
+        <button>F2</button>      
+        <button>F3</button>
+        <button>F4</button>
+      </div>
+    </div>  
+    <div class="controls">
+			<button id="previous">Previous</button>
+      <button id="next">Next</button>
+    </div>
+  </div>
+</main>
+		</div>
+  </body>
+		<link rel = "stylesheet" href = "./userInterface.css">
+		<script type = "module" src = "./app/quizDisplay.ts" defer> </script>
+		<script type = "module" src = "./app/app.ts" defer></script>
+</html>

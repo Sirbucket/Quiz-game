@@ -1,0 +1,71 @@
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	margin-top: 60px;
+}
+
+body {
+	padding: 0;
+  margin: 0;
+}
+
+.app {
+  max-width: 1600px; /* limit width to 1600px */
+  margin: auto; /* center on screen */
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  margin-bottom: 100px; /* Leave room for controls */
+}
+
+.header {
+	font-size: 48pt;
+  padding: 8pt;
+  text-align: center;
+	transition: all 500ms;
+}
+
+.question {
+	font-size: 24pt;
+  padding: 8pt;
+  text-align: center;
+	transition: all 500ms;
+}
+
+/* Space the answers out */
+.answers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12em;
+  font-size: 18pt;
+  flex-wrap: wrap;
+}
+
+.controls {
+	position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  font-size: 10pt;
+  height: 100px;
+  /* Width is either 800px or full width -- whichever is smaller */
+  --width: calc(min(1280px,100vw));
+    /* This left value is calculated to center the controls... */
+  left : calc(50vw - var(--width)/2);
+  width: var(--width);
+  text-align: right;  
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	transition: all 500ms;
+}
+
+button {
+	padding: 2em;
+	border-radius: 4px;
+  /* The transition line makes all changes
+  get animated */
+  transition: all 500ms;
+  font-size: inherit;
+}

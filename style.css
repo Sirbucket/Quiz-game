@@ -1,0 +1,33 @@
+#app {
+  color: #b80000;
+}
+
+body {
+  background-color: #d25151;
+  color: #ffffff;
+}
+
+/* Set up big text in the header */
+.header {
+  background-color: #cc3838; /* IACS Blue */
+  color: #ffffff;
+}
+
+.question {
+  background-color: #cc3838; /* IACS Blue */
+  color: #ffffff;
+}
+
+/* Set the controls up fixed at the bottom */
+.controls {
+  background-color: #cc3838;
+  border-top: 1px solid #9f2d2d;
+	color: #ffffff;
+}
+
+/* Make the buttons stylish */
+button {
+  background-color: #cc3838;
+  color: #ffffff;
+  border: 3px solid #db4d4d;
+}
