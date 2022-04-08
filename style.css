@@ -1,33 +1,46 @@
 #app {
-  color: #b80000;
+  color: #4f5eab;
 }
 
 body {
-  background-color: #d25151;
+  background-color: #4f5eab;
   color: #ffffff;
 }
 
 /* Set up big text in the header */
 .header {
-  background-color: #cc3838; /* IACS Blue */
+  background-color: #5c72cc; /* IACS Blue */
   color: #ffffff;
 }
 
 .question {
-  background-color: #cc3838; /* IACS Blue */
+  background-color: #5c72cc; /* IACS Blue */
   color: #ffffff;
 }
 
 /* Set the controls up fixed at the bottom */
 .controls {
-  background-color: #cc3838;
-  border-top: 1px solid #9f2d2d;
+  background-color: #5c72cc;
+  border-top: 1px solid #3e64bb;
 	color: #ffffff;
 }
 
 /* Make the buttons stylish */
 button {
-  background-color: #cc3838;
+  background-color: #5c72cc;
   color: #ffffff;
-  border: 3px solid #db4d4d;
+  border: 3px solid #3e64bb;
+}
+
+/* Wrong Color */
+.wrong {
+  color: #d6f5ff;
+  background-color: #e64c4c;
+	border: #c83737;
+}
+
+.right {
+	color: #f0fff6;
+	background-color: #8adb8a;
+	border: #62bc62;
 }

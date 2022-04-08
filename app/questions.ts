@@ -1,3 +1,4 @@
+//Type definition.
 export type question = {
 	question: string,
 	answer: string,

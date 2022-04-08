@@ -4,33 +4,43 @@ import { changeQuestion } from "./quizDisplay";
 let currentQuestionNumber = 0;
 let currentQuestion = questions[currentQuestionNumber];
 
-export const nextQuestion = () => {
+//Moves to next question in the array.
+const nextQuestion = () => {
 	currentQuestionNumber += 1;
 	currentQuestion = questions[currentQuestionNumber];
 }
 
-export const prevQuestion = () => {
+//Moves to the last question in the array.
+const prevQuestion = () => {
 	currentQuestionNumber -= 1;
 	currentQuestion = questions[currentQuestionNumber];
 }
 
-document
-	.querySelector("#previous")
-	.addEventListener("click", () => {
-		if (currentQuestionNumber <= 0) {
-			return;
-		}
-		else {
-			prevQuestion();
-			changeQuestion(currentQuestion);
-		}
-});
+//Makes the button logic work.
+const loadQuizLogic = () => {
+	document
+		.querySelector("#previous")
+		.addEventListener("click", () => {
+			if (currentQuestionNumber <= 0) {
+				return;
+			}
+			else {
+				prevQuestion();
+				changeQuestion(currentQuestion);
+			}
+		});
 
-document
-	.querySelector('#next')
-	.addEventListener("click", () => {
-			nextQuestion();
-			changeQuestion(currentQuestion);
-});
-
-changeQuestion(currentQuestion);
+	document
+		.querySelector('#next')
+		.addEventListener("click", () => {
+			if (currentQuestionNumber >= questions.length - 2) {
+				return;
+			}
+			else {
+				nextQuestion();
+				changeQuestion(currentQuestion);
+			}
+		});
+	changeQuestion(currentQuestion);
+}
+loadQuizLogic();

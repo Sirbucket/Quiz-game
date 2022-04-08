@@ -1,5 +1,6 @@
 import { question } from "./questions";
 import { shuffleArray } from "./utilities";
+import { markWrong, markRight } from "./feedback";
 
 /* Create a single button with text string for question */
 const makeButton = (str: string, question: question) => {
@@ -11,14 +12,14 @@ const makeButton = (str: string, question: question) => {
 			// (this is just a placeholder for now --
 			// we should do something better with
 			// right answers eventually)
-			window.alert('Correct!');
+			markRight(button);
 		}
 		else {
 			// handle wrong answer
 			// (this is just a placeholder for now
 			// -- we should do something better with
 			// wrong answers eventually)
-			window.alert('Wrong!');
+			markWrong(button);
 		}
 	});
 	return button;
