@@ -18,6 +18,7 @@ const prevQuestion = () => {
 
 //Makes the button logic work.
 const loadQuizLogic = () => {
+	//Backward Button Logic
 	document
 		.querySelector("#previous")
 		.addEventListener("click", () => {
@@ -30,10 +31,11 @@ const loadQuizLogic = () => {
 			}
 		});
 
+	//Forward Button Logic
 	document
 		.querySelector('#next')
 		.addEventListener("click", () => {
-			if (currentQuestionNumber >= questions.length - 2) {
+			if (currentQuestionNumber >= questions.length - 1) {
 				return;
 			}
 			else {
