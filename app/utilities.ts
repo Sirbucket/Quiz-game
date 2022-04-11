@@ -1,3 +1,4 @@
+//Self explanatory
 export function shuffleArray(array) {
 	for (let i = array.length; --i;) {
 		const j = Math.floor(Math.random() * (i + 1));
