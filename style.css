@@ -27,20 +27,20 @@ body {
 
 /* Make the buttons stylish */
 button {
-  background-color: #5c72cc;
+  background-color: #415bc5;
   color: #ffffff;
-  border: 3px solid #3e64bb;
+  border: 3px solid #325198;
 }
 
 /* Wrong Color */
 .wrong {
   color: #d6f5ff;
-  background-color: #e64c4c;
-	border: #c83737;
+  background-color: #b31a1a;
+	border: #962929;
 }
 
 .right {
 	color: #f0fff6;
-	background-color: #8adb8a;
-	border: #3fa23f;
+	background-color: #32a332;
+	border: #348734;
 }

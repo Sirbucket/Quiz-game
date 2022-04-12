@@ -5,14 +5,6 @@
 	transform: scale(1.05,1.05);
 }
 
-/* Button highlight */
-.highlight {
-  color: #42639a; /* IACS red */
-  text-shadow: 3px 3px white;
-  font-weight: bold;
-  font-family: Futura;
-}
-
 /* Question hovering */
 .question:hover {
 	background-color: #42639a;

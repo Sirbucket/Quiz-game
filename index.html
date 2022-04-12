@@ -7,20 +7,18 @@
     <title>WoW Classic Warrior Quiz</title>
 		<link rel = "preload" as = "style" href = "./style.css">
 		<link rel = "preload" as = "style" href = "./init.css">
-		<link rel = "preload" as = "script" href = "./app/questions.ts" crossOrigin = "NA">
-		<link rel = "preload" as = "script" href = "./app/utilities.ts" crossOrigin = "NA">
-		<link rel = "preload" as = "script" href = "./app/feedback.ts" crossOrigin = "NA">
+		<link rel = "preload" as = "style" href = "./userInterface.css">
+		<link rel = "preload" as = "script" href = "./app/app.ts" crossOrigin = "NA">
 		<link rel = "stylesheet" href = "./style.css">
 		<link rel = "stylesheet" href = "./init.css">
-		<script type = "module" src = "./app/questions.ts" defer> </script>
-		<script type = "module" src = "./app/utilities.ts" defer> </script>
-		<script type = "module" src = "./app/feedback.ts" defer> </script>
+		<link rel = "stylesheet" href = "./userInterface.css">
+		<script type = "module" src = "./app/app.ts" defer></script>
   </head>
   <body>
     <div id="app">
 			<main class="app">
   <div class="header">
-    The <span class="highlight">Classic Warrior</span> Quiz
+    The Classic Warrior Quiz
   </div>
   <div class="quiz">
     <div class="question-container">
@@ -41,8 +39,5 @@
   </div>
 </main>
 		</div>
-  </body>
-		<link rel = "stylesheet" href = "./userInterface.css">
-		<script type = "module" src = "./app/quizDisplay.ts" defer> </script>
-		<script type = "module" src = "./app/app.ts" defer></script>
+	</body>
 </html>

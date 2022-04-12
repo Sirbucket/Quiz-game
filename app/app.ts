@@ -1,5 +1,4 @@
-import { questions } from "./questions";
-import { changeQuestion } from "./quizDisplay";
+import { questions,changeQuestion } from "./quizDisplay";
 
 let currentQuestionNumber = 0;
 let currentQuestion = questions[currentQuestionNumber];
