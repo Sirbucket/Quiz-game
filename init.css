@@ -22,14 +22,12 @@ body {
 	font-size: 48pt;
   padding: 8pt;
   text-align: center;
-	transition: all 500ms;
 }
 
 .question {
 	font-size: 36pt;
   padding: 8pt;
   text-align: center;
-	transition: all 500ms;
 }
 
 /* Space the answers out */
@@ -54,18 +52,39 @@ body {
   left : calc(50vw - var(--width)/2);
   width: var(--width);
   text-align: right;  
-  padding: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-	transition: all 500ms;
 }
 
 button {
-	padding: 2em;
-	border-radius: 16px;
+	padding: 2em;	
   /* The transition line makes all changes
   get animated */
   transition: all 500ms;
   font-size: inherit;
+}
+
+/* Change color when the mouse hover */
+button:hover {
+  background-color: #42639a;
+  color: white;
+	transform: scale(1.1,1.1);
+}
+
+.wrong:active,.wrong:hover {
+  transform: scale(0.7)rotate(5deg);
+  /* Take a half second to do the transition */
+  transition: all 500ms;
+  /* Wait a half second to transition, as if
+  we're "thinking" about the answer */
+  transition-delay: 500ms;
+}
+.right:active,.right:hover {
+	transform: scale(1.5)rotate(5deg);
+  /* Take a half second to do the transition */
+  transition: all 500ms;
+  /* Wait a half second to transition, as if
+  we're "thinking" about the answer */
+  transition-delay: 500ms;
 }
